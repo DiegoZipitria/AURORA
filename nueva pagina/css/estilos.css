@@ -1,0 +1,218 @@
+/* Selector por etiqueta:  body */
+video {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    text-align: center;
+    background-color: #f0f8ff;
+    margin: 50px auto 20px auto; /* espacio superior grande, margen inferior pequeño */
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    border: 2px solid #af8feb;
+}
+.contenedor-textos {
+    padding: 20px; 
+    font-family: 'Arial', sans-serif;            /* espacio interno */
+    margin: 20px;             /* margen interno */
+    max-width: 700px;          /* ancho máximo */
+    background-color: #f9f9f9; /* fondo suave (opcional) */
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.1); /* sombra suave */
+    border-radius: 10px;       /* esquinas redondeadas */
+    text-align: left;          /* texto alineado a la izquierda */
+}
+
+.galeria {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #f0f8ff; /* Fondo frío claro */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  font-family: 'Arial', sans-serif;
+}
+
+.galeria h2 {
+  text-align: center;
+  color: #0277bd;
+  margin-bottom: 20px;
+}
+
+.imagenes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.imagen {
+  flex: 1 1 calc(33% - 30px);
+  max-width: calc(33% - 30px);
+  text-align: center;
+}
+
+.imagen img {
+  width: 200px; /* o el tamaño que desees */
+  height: 150px; /* altura fija */
+  object-fit: cover; /* para que no se distorsionen y recorten si es necesario */
+  border-radius: 8px;
+  border: 2px solid #0277bd;
+  transition: transform 0.3s, border-color 0.3s;
+}
+
+.imagen img:hover {
+  transform: scale(1.05);
+  border-color: #ffa000;
+}
+
+.imagen p {
+  margin-top: 8px;
+  font-size: 1em;
+  color: #333;
+}
+
+body {
+    background-color: #e0f7fa; /* fondo frío claro */
+}
+
+ul {
+    font-size: 1.2em; /* tamaño de fuente más grande */
+    line-height: 1.5; /* mejor lectura */
+}
+
+.contenedor-Video {
+    margin-top: 400px; /* ajusta este valor según cuánto quieras bajarlo */
+    text-align: center; /* para centrar el contenido si quieres */
+}
+
+p {
+    font-size: 1.25em; /* puedes ajustar a tu preferencia */
+}
+
+nav {
+    background-color: #1f5574; /* Fondo oscuro para el menú */
+    padding: 10px 20px;    /* Espaciado interno */
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Lista sin puntos y en línea */
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* en línea */
+    justify-content: center; /* centrado horizontal */
+}
+
+/* Estilo para los elementos de la lista */
+nav li {
+    margin: 0 15px; /* espacio entre enlaces */
+}
+
+/* Estilo para los enlaces */
+nav a {
+    color: #fff; /* color del texto */
+    text-decoration: none; /* sin subrayado */
+    font-family: 'Arial', sans-serif;
+    font-size: 1.1em;
+    transition: color 0.3s, transform 0.3s;
+}
+
+/* Efecto hover en los enlaces */
+nav a:hover {
+    color: #af8feb; /* color diferente al pasar */
+    transform: scale(1.05); /* ligeramente más grande */
+}
+
+
+img {
+    float: left;
+    margin-right: 20px; /* espacio entre la imagen y el texto */
+    /* resto de tus estilos */
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    background-color: #f0f8ff;
+    display: block; 
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    border: 2px solid #af8feb;
+}
+
+
+/* Estilo específico para el <h3> con ID "videoShakira" */
+#videoShakira {
+    font-family: 'Arial', sans-serif;
+    font-size: 2em;
+    color: #af8feb;
+    margin-top: 50px; /* aumento del margen superior */
+    margin-bottom: 30px; /* margen inferior mayor si deseas */
+    text-align: center;
+    /* Opcional: para colocarlo en el fondo si quieres */
+    /* position: absolute; */
+    /* bottom: 0; */
+    /* width: 100%; */
+}
+
+
+/* Estilo para el footer */
+footer {
+    background-color: #222; /* fondo oscuro */
+    color: #fff;            /* texto en blanco */
+    text-align: center;     /* centrar el contenido */
+    padding: 15px 20px;     /* espaciamiento interno */
+    margin-top: 30px;       /* separación superior */
+    font-family: 'Arial', sans-serif;
+    font-size: 0.9em;
+    border-top: 3px solid #af8feb; /* línea superior decorativa */
+}
+
+ #formularioContactoUsuario {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f0f8ff; /* color de fondo suave */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    font-family: Arial, sans-serif;
+  }
+
+  /* Estilo para las etiquetas */
+  #formularioContactoUsuario label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+  }
+
+  /* Estilo para los inputs y textarea */
+  #formularioContactoUsuario input[type="text"],
+  #formularioContactoUsuario input[type="email"],
+  #formularioContactoUsuario textarea {
+    width: 100%;
+    padding: 8px 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 14px;
+  }
+
+  /* Estilo para el botón */
+  #formularioContactoUsuario input[type="button"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50; /* verde */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+
+  /* Cambio de color en hover */
+  #formularioContactoUsuario input[type="button"]:hover {
+    background-color: #45a049;
+  }
+
