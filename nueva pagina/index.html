@@ -3,8 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <title>Aurora Security</title>
-  <link rel="stylesheet" href="css/estilos.css">
+
+  <!-- FONT -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/estilos.css">
+
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -21,7 +28,7 @@
   </nav>
 
   <!-- HERO -->
-  <header class="hero">
+  <header class="hero" data-aos="fade-up">
     <img src="img/LogoNuevo.png" class="hero-logo">
     <h1>AURORA</h1>
     <h2>Protección Digital de Última Generación</h2>
@@ -29,28 +36,31 @@
     <button class="btn">Conoce CyberFocus</button>
   </header>
 
-  <!-- SECCION CYBERFOCUS -->
+  <!-- CYBER -->
   <section class="cyber">
-    <h2>CyberFocus</h2>
-    <p class="sub">
+    <h2 data-aos="fade-up">CyberFocus</h2>
+    <p class="sub" data-aos="fade-up">
       Plataforma de Priorización de Amenazas que transforma el caos en acción.
     </p>
 
     <div class="cards">
 
-      <div class="card">
+      <div class="card" data-aos="fade-up">
+        <i data-lucide="clipboard-check"></i>
         <h3>Priorización Inteligente</h3>
         <p>Obtén listados accionables priorizados por riesgo real.</p>
       </div>
 
-      <div class="card">
+      <div class="card" data-aos="fade-up" data-aos-delay="100">
+        <i data-lucide="shield"></i>
         <h3>Riesgo Contextualizado</h3>
         <p>Analizamos amenazas considerando el contexto real.</p>
       </div>
 
-      <div class="card">
-        <h3>Optimización de Recursos</h3>
-        <p>Enfoca esfuerzos en lo realmente importante.</p>
+      <div class="card" data-aos="fade-up" data-aos-delay="200">
+        <i data-lucide="trending-up"></i>
+        <h3>Optimización</h3>
+        <p>Enfoca recursos en lo realmente importante.</p>
       </div>
 
     </div>
@@ -58,9 +68,9 @@
 
   <!-- CONTACTO -->
   <section class="contacto">
-    <h2>Contacto</h2>
+    <h2 data-aos="fade-up">Contacto</h2>
 
-    <form>
+    <form data-aos="fade-up">
       <input type="text" placeholder="Nombre" required>
       <input type="email" placeholder="Email" required>
       <textarea placeholder="Mensaje"></textarea>
@@ -70,8 +80,19 @@
 
   <!-- FOOTER -->
   <footer>
-    <p>© 2026 Aurora S.A.</p>
+    <p>© 2026 Aurora</p>
   </footer>
+
+  <!-- SCRIPTS -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    lucide.createIcons();
+  </script>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 
 </body>
 </html>
