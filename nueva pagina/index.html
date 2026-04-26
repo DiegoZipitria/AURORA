@@ -1,54 +1,77 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-
+  <meta charset="UTF-8">
+  <title>Aurora Security</title>
+  <link rel="stylesheet" href="css/estilos.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
-	<meta charset="utf-8">
-	<link rel="stylesheet" href="css/estilos.css">
-	<title> EOS SECURITY </title>
 
 <body>
 
-	<nav>
-		<ul>
-			<li><a href="biografia.html">Nuestro producto</a></li>
-			<li><a href="index.html"> Pagina Principal</a></li>
-			<li><a href="galeria.html"> Sobre nosotros</a></li>
-			<li><a href="contacto.html"> Contacto</a></li>
-		</ul>
-	</nav>
+  <!-- NAV -->
+  <nav class="navbar">
+    <h2 class="logo">AURORA</h2>
+    <ul>
+      <li><a href="#">Inicio</a></li>
+      <li><a href="#">Nosotros</a></li>
+      <li><a href="#">CyberFocus</a></li>
+      <li><a href="#">Contacto</a></li>
+    </ul>
+  </nav>
 
-	<!-- INICIO CABECERA -->
-	<header >
-		 <h1>Pagina aurora</h1>
-	</header>
-	<!-- FIN CABECERA -->
+  <!-- HERO -->
+  <header class="hero">
+    <img src="img/LogoNuevo.png" class="hero-logo">
+    <h1>AURORA</h1>
+    <h2>Protección Digital de Última Generación</h2>
+    <p>Soluciones avanzadas de ciberseguridad para proteger tu empresa.</p>
+    <button class="btn">Conoce CyberFocus</button>
+  </header>
 
-	<main>
-		<section>
-			<div class="contenedor-textos">
-			<p>Texto de empresa About us.</p>
-			<h2>a</h2>
-			<p>a</p>
-			<p>a</p>
-			<h2>a</h2>
-			<p>a</p>
-			</div>
-			
-			<img src="img/LogoNuevo.png" alt="Logo">
-		</section>
-	</main>
-	<div class="contenedor-Video">
+  <!-- SECCION CYBERFOCUS -->
+  <section class="cyber">
+    <h2>CyberFocus</h2>
+    <p class="sub">
+      Plataforma de Priorización de Amenazas que transforma el caos en acción.
+    </p>
 
+    <div class="cards">
 
-	</div>
+      <div class="card">
+        <h3>Priorización Inteligente</h3>
+        <p>Obtén listados accionables priorizados por riesgo real.</p>
+      </div>
 
+      <div class="card">
+        <h3>Riesgo Contextualizado</h3>
+        <p>Analizamos amenazas considerando el contexto real.</p>
+      </div>
+
+      <div class="card">
+        <h3>Optimización de Recursos</h3>
+        <p>Enfoca esfuerzos en lo realmente importante.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section class="contacto">
+    <h2>Contacto</h2>
+
+    <form>
+      <input type="text" placeholder="Nombre" required>
+      <input type="email" placeholder="Email" required>
+      <textarea placeholder="Mensaje"></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 Aurora S.A.</p>
+  </footer>
 
 </body>
-	
-<!-- INICIO FOOTER -->
-<footer>
-	<p>© 2026, Aurora S.A. Todos los derechos reservados. </p>
-</footer>
-<!-- FIN FOOTER -->
 </html>

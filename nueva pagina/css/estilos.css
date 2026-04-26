@@ -1,218 +1,155 @@
-/* Selector por etiqueta:  body */
-video {
-    font-family: 'Arial', sans-serif;
-    font-size: 16px;
-    text-align: center;
-    background-color: #f0f8ff;
-    margin: 50px auto 20px auto; /* espacio superior grande, margen inferior pequeño */
-    display: block;
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-    border: 2px solid #af8feb;
-}
-.contenedor-textos {
-    padding: 20px; 
-    font-family: 'Arial', sans-serif;            /* espacio interno */
-    margin: 20px;             /* margen interno */
-    max-width: 700px;          /* ancho máximo */
-    background-color: #f9f9f9; /* fondo suave (opcional) */
-    box-shadow: 2px 2px 8px rgba(0,0,0,0.1); /* sombra suave */
-    border-radius: 10px;       /* esquinas redondeadas */
-    text-align: left;          /* texto alineado a la izquierda */
-}
-
-.galeria {
-  max-width: 900px;
-  margin: 30px auto;
-  padding: 20px;
-  background-color: #f0f8ff; /* Fondo frío claro */
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  font-family: 'Arial', sans-serif;
-}
-
-.galeria h2 {
-  text-align: center;
-  color: #0277bd;
-  margin-bottom: 20px;
-}
-
-.imagenes {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 15px;
-  justify-content: center;
-}
-
-.imagen {
-  flex: 1 1 calc(33% - 30px);
-  max-width: calc(33% - 30px);
-  text-align: center;
-}
-
-.imagen img {
-  width: 200px; /* o el tamaño que desees */
-  height: 150px; /* altura fija */
-  object-fit: cover; /* para que no se distorsionen y recorten si es necesario */
-  border-radius: 8px;
-  border: 2px solid #0277bd;
-  transition: transform 0.3s, border-color 0.3s;
-}
-
-.imagen img:hover {
-  transform: scale(1.05);
-  border-color: #ffa000;
-}
-
-.imagen p {
-  margin-top: 8px;
-  font-size: 1em;
-  color: #333;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background-color: #e0f7fa; /* fondo frío claro */
+  font-family: 'Inter', sans-serif;
+  background: radial-gradient(circle at top, #1e1b4b, #020617);
+  color: white;
 }
 
-ul {
-    font-size: 1.2em; /* tamaño de fuente más grande */
-    line-height: 1.5; /* mejor lectura */
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background: rgba(0,0,0,0.5);
+  backdrop-filter: blur(10px);
 }
 
-.contenedor-Video {
-    margin-top: 400px; /* ajusta este valor según cuánto quieras bajarlo */
-    text-align: center; /* para centrar el contenido si quieres */
+.navbar ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
 }
 
-p {
-    font-size: 1.25em; /* puedes ajustar a tu preferencia */
+.navbar a {
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
 }
 
-nav {
-    background-color: #1f5574; /* Fondo oscuro para el menú */
-    padding: 10px 20px;    /* Espaciado interno */
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+.navbar a:hover {
+  color: #38bdf8;
 }
 
-/* Lista sin puntos y en línea */
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex; /* en línea */
-    justify-content: center; /* centrado horizontal */
+.logo {
+  font-weight: 600;
 }
 
-/* Estilo para los elementos de la lista */
-nav li {
-    margin: 0 15px; /* espacio entre enlaces */
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 150px 20px 100px;
 }
 
-/* Estilo para los enlaces */
-nav a {
-    color: #fff; /* color del texto */
-    text-decoration: none; /* sin subrayado */
-    font-family: 'Arial', sans-serif;
-    font-size: 1.1em;
-    transition: color 0.3s, transform 0.3s;
+.hero-logo {
+  width: 120px;
+  margin-bottom: 20px;
 }
 
-/* Efecto hover en los enlaces */
-nav a:hover {
-    color: #af8feb; /* color diferente al pasar */
-    transform: scale(1.05); /* ligeramente más grande */
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
 }
 
-
-img {
-    float: left;
-    margin-right: 20px; /* espacio entre la imagen y el texto */
-    /* resto de tus estilos */
-    font-family: 'Arial', sans-serif;
-    font-size: 16px;
-    background-color: #f0f8ff;
-    display: block; 
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-    border: 2px solid #af8feb;
+.hero h2 {
+  font-size: 1.5rem;
+  color: #94a3b8;
 }
 
-
-/* Estilo específico para el <h3> con ID "videoShakira" */
-#videoShakira {
-    font-family: 'Arial', sans-serif;
-    font-size: 2em;
-    color: #af8feb;
-    margin-top: 50px; /* aumento del margen superior */
-    margin-bottom: 30px; /* margen inferior mayor si deseas */
-    text-align: center;
-    /* Opcional: para colocarlo en el fondo si quieres */
-    /* position: absolute; */
-    /* bottom: 0; */
-    /* width: 100%; */
+.hero p {
+  margin: 20px 0;
+  color: #cbd5f5;
 }
 
+.btn {
+  padding: 12px 25px;
+  background: linear-gradient(90deg, #06b6d4, #3b82f6);
+  border: none;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
 
-/* Estilo para el footer */
+.btn:hover {
+  transform: scale(1.05);
+}
+
+/* CYBER SECTION */
+.cyber {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.cyber h2 {
+  font-size: 2rem;
+}
+
+.sub {
+  color: #94a3b8;
+  margin-bottom: 40px;
+}
+
+/* CARDS */
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: rgba(15,23,42,0.7);
+  padding: 25px;
+  border-radius: 12px;
+  width: 280px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+/* CONTACTO */
+.contacto {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+form {
+  max-width: 400px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input, textarea {
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+}
+
+form button {
+  padding: 10px;
+  background: #06b6d4;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* FOOTER */
 footer {
-    background-color: #222; /* fondo oscuro */
-    color: #fff;            /* texto en blanco */
-    text-align: center;     /* centrar el contenido */
-    padding: 15px 20px;     /* espaciamiento interno */
-    margin-top: 30px;       /* separación superior */
-    font-family: 'Arial', sans-serif;
-    font-size: 0.9em;
-    border-top: 3px solid #af8feb; /* línea superior decorativa */
+  text-align: center;
+  padding: 20px;
+  background: #020617;
+  margin-top: 40px;
 }
-
- #formularioContactoUsuario {
-    max-width: 400px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #f0f8ff; /* color de fondo suave */
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    font-family: Arial, sans-serif;
-  }
-
-  /* Estilo para las etiquetas */
-  #formularioContactoUsuario label {
-    display: block;
-    margin-bottom: 8px;
-    font-weight: bold;
-  }
-
-  /* Estilo para los inputs y textarea */
-  #formularioContactoUsuario input[type="text"],
-  #formularioContactoUsuario input[type="email"],
-  #formularioContactoUsuario textarea {
-    width: 100%;
-    padding: 8px 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-sizing: border-box;
-    font-size: 14px;
-  }
-
-  /* Estilo para el botón */
-  #formularioContactoUsuario input[type="button"] {
-    width: 100%;
-    padding: 10px;
-    background-color: #4CAF50; /* verde */
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s ease;
-  }
-
-  /* Cambio de color en hover */
-  #formularioContactoUsuario input[type="button"]:hover {
-    background-color: #45a049;
-  }
-
