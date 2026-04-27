@@ -18,14 +18,23 @@
 
   <!-- NAV -->
   <nav class="navbar">
-    <h2 class="logo">AURORA</h2>
-    <ul>
-      <li><a href="#">Inicio</a></li>
-      <li><a href="#">Nosotros</a></li>
-      <li><a href="#">CyberFocus</a></li>
-      <li><a href="#">Contacto</a></li>
-    </ul>
-  </nav>
+  <h2 class="logo">AURORA</h2>
+
+  <!-- BOTÓN HAMBURGUESA -->
+  <div class="menu-toggle" id="menu-toggle">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <!-- MENÚ -->
+  <ul id="menu">
+    <li><a href="#">Inicio</a></li>
+    <li><a href="#">Nosotros</a></li>
+    <li><a href="#">CyberFocus</a></li>
+    <li><a href="#">Contacto</a></li>
+  </ul>
+</nav>
 
   <!-- HERO -->
   <header class="hero" data-aos="fade-up">
@@ -93,6 +102,16 @@
   <script>
     AOS.init();
   </script>
+
+  <script>
+  const toggle = document.getElementById("menu-toggle");
+  const menu = document.getElementById("menu");
+
+  toggle.addEventListener("click", () => {
+    menu.classList.toggle("active");
+  });
+</script>
+
 
 </body>
 </html>

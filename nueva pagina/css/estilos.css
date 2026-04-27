@@ -194,3 +194,47 @@ footer {
   background: #020617;
   margin-top: 40px;
 }
+
+
+/* HAMBURGUESA */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.menu-toggle span {
+  width: 25px;
+  height: 3px;
+  background: white;
+  margin: 4px 0;
+  transition: 0.3s;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  .navbar ul {
+    position: fixed;
+    top: 0;
+    right: -100%; /* 🔥 escondido fuera de pantalla */
+    height: 100vh;
+    width: 250px;
+    background: rgba(0,0,0,0.95);
+
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+
+    transition: 0.3s;
+  }
+
+  .navbar ul.active {
+    right: 0; /* 🔥 aparece deslizando */
+  }
+}
