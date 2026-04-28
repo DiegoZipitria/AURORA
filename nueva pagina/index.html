@@ -76,16 +76,24 @@
   </section>
 
   <!-- CONTACTO -->
-  <section class="contacto">
-    <h2 data-aos="fade-up">Contacto</h2>
+ <section class="contacto">
+  <h2 data-aos="fade-up">Contacto</h2>
 
-    <form data-aos="fade-up">
-      <input type="text" placeholder="Nombre" required>
-      <input type="email" placeholder="Email" required>
-      <textarea placeholder="Mensaje"></textarea>
-      <button type="submit">Enviar</button>
-    </form>
-  </section>
+  <form 
+    action="https://formspree.io/f/xlgaqlnw" 
+    method="POST"
+    data-aos="fade-up"
+  >
+    <input type="text" name="nombre" placeholder="Nombre" required>
+    
+    <input type="email" name="email" placeholder="Email" required>
+    
+    <textarea name="mensaje" placeholder="Mensaje" required></textarea>
+
+    <button type="submit">Enviar</button>
+    <input type="hidden" name="_next" value="https://tusitio.com/gracias.html">
+  </form>
+</section>
 
   <!-- FOOTER -->
   <footer>
