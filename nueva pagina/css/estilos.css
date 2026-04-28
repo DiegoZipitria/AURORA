@@ -4,6 +4,22 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+section, header {
+  scroll-margin-top: 100px;
+}
+body::before {
+  pointer-events: none;
+}
+
+.navbar {
+  z-index: 9999;
+}
+
+
 body {
   font-family: 'Inter', sans-serif;
   color: white;
@@ -82,6 +98,16 @@ body > * {
   font-weight: 600;
 }
 
+.logo a {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.logo a:hover {
+  color: #38bdf8;
+}
+
 /* HERO */
 .hero {
   text-align: center;
@@ -89,8 +115,15 @@ body > * {
 }
 
 .hero-logo {
-  width: 120px;
-  margin-bottom: 20px;
+  width: 200px; /* probá 180–240 según te guste */
+  margin-bottom: 25px;
+
+  transition: 0.3s;
+}
+
+/* efecto pro */
+.hero-logo:hover {
+  transform: scale(1.05);
 }
 
 .hero h1 {
@@ -273,15 +306,102 @@ textarea {
 }
 
 
-
-/* FOOTER */
-footer {
-  text-align: center;
-  padding: 20px;
-  background: #020617;
-  margin-top: 40px;
+/* FOOTER COMPACTO */
+.footer {
+  margin-top: 60px;
+  background: rgba(2,6,23,0.9);
+  border-top: 1px solid rgba(255,255,255,0.05);
 }
 
+/* CONTENEDOR */
+.footer-container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px 20px; /* 🔽 antes 40px */
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* 🔥 centrado vertical */
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* BRAND */
+.footer-brand h2 {
+  font-size: 1.2rem; /* 🔽 más chico */
+  margin-bottom: 4px;
+}
+
+.footer-brand p {
+  color: #94a3b8;
+  font-size: 0.8rem;
+}
+
+/* CONTACTO */
+.footer-contact h3 {
+  font-size: 0.9rem;
+  margin-bottom: 5px;
+}
+
+.footer-contact p {
+  color: #cbd5f5;
+  font-size: 0.8rem;
+}
+
+.footer-contact span {
+  color: #64748b;
+  font-size: 0.7rem;
+}
+
+/* BOTTOM */
+.footer-bottom {
+  text-align: center;
+  padding: 10px; /* 🔽 antes 15px */
+  border-top: 1px solid rgba(255,255,255,0.05);
+  font-size: 0.7rem;
+  color: #64748b;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/* CONTACTO */
+.footer-contact h3 {
+  margin-bottom: 10px;
+}
+
+.footer-contact p {
+  color: #cbd5f5;
+  font-size: 0.9rem;
+}
+
+.footer-contact span {
+  color: #64748b;
+  font-size: 0.8rem;
+}
+
+/* BOTTOM */
+.footer-bottom {
+  text-align: center;
+  padding: 15px;
+  border-top: 1px solid rgba(255,255,255,0.05);
+  font-size: 0.8rem;
+  color: #64748b;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+}
 
 /* HAMBURGUESA */
 .menu-toggle {
