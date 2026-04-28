@@ -127,7 +127,20 @@ body > * {
 }
 
 .hero h1 {
-  font-size: 3rem;
+  font-size: 3.5rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  font-family: 'Poppins', sans-serif;
+
+  /* degradado moderno */
+  background: linear-gradient(90deg, #06b6d4, #3b82f6, #7c3aed);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  /* glow sutil */
+  text-shadow: 0 0 20px rgba(59,130,246,0.3);
+
+  margin-bottom: 10px;
 }
 
 .hero h2 {
