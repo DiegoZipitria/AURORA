@@ -45,7 +45,7 @@
     <button class="btn">Conoce CyberFocus</button>
   </header>
 
-  <!-- CYBER -->
+<!--
   <section class="cyber">
     <h2 data-aos="fade-up">CyberFocus</h2>
     <p class="sub" data-aos="fade-up">
@@ -74,8 +74,130 @@
 
     </div>
   </section>
+-->
 
-  <!-- CONTACTO -->
+
+
+  <section class="nosotros">
+  <h2 data-aos="fade-up">Nosotros</h2>
+
+  <div class="nosotros-cards">
+
+    <div class="nos-card" data-aos="fade-up">
+      <i data-lucide="shield"></i>
+      <h3>Nuestro Enfoque</h3>
+      <p>
+        Nos enfocamos en la seguridad y la eficiencia de los procesos,
+        facilitando la transformación digital con tecnología como ventaja competitiva.
+      </p>
+    </div>
+
+    <div class="nos-card" data-aos="fade-up" data-aos-delay="100">
+      <i data-lucide="eye"></i>
+      <h3>Nuestra Visión</h3>
+      <p>
+        Priorizamos riesgos para enfocar recursos donde el impacto es mayor,
+        asegurando decisiones inteligentes con contexto real.
+      </p>
+    </div>
+
+    <div class="nos-card" data-aos="fade-up" data-aos-delay="200">
+      <i data-lucide="briefcase"></i>
+      <h3>Nuestro Portafolio</h3>
+      <p>
+        Consultorías, diseño de soluciones y servicios gestionados
+        en ciberseguridad adaptados a cada empresa.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+<section class="features">
+  <h2 data-aos="fade-up">CyberFocus</h2>
+  <p class="sub" data-aos="fade-up">
+    Plataforma de Priorización de Amenazas que transforma el caos en acción.
+  </p>
+
+  <div class="features-grid">
+
+    <!-- ITEM -->
+    <div class="feature-card">
+      <div class="feature-header">
+        <i data-lucide="clipboard-check"></i>
+        <h3>Priorización Inteligente</h3>
+      </div>
+      <p class="feature-desc">
+        Obtenga listados accionables priorizados por riesgo real.
+      </p>
+
+      <div class="feature-extra">
+        <p>
+          Nuestro sistema analiza miles de vulnerabilidades automáticamente
+          utilizando contexto real del negocio para priorizar lo que realmente importa.
+        </p>
+      </div>
+    </div>
+
+    <div class="feature-card">
+      <div class="feature-header">
+        <i data-lucide="shield"></i>
+        <h3>Riesgo Real Contextualizado</h3>
+      </div>
+      <p class="feature-desc">
+        Calculamos el riesgo considerando controles existentes.
+      </p>
+
+      <div class="feature-extra">
+        <p>
+          Integramos WAF, IPS y segmentación para obtener una visión realista del riesgo
+          y reducir falsos positivos en decisiones críticas.
+        </p>
+      </div>
+    </div>
+
+    <div class="feature-card">
+      <div class="feature-header">
+        <i data-lucide="file-text"></i>
+        <h3>Cumplimiento Normativo</h3>
+      </div>
+      <p class="feature-desc">
+        Preparado para auditorías y regulaciones.
+      </p>
+
+      <div class="feature-extra">
+        <p>
+          Generamos reportes automáticos alineados con estándares internacionales
+          para facilitar auditorías y cumplimiento.
+        </p>
+      </div>
+    </div>
+
+    <div class="feature-card">
+      <div class="feature-header">
+        <i data-lucide="trending-up"></i>
+        <h3>Optimización de Recursos</h3>
+      </div>
+      <p class="feature-desc">
+        Mejora la eficiencia del equipo.
+      </p>
+
+      <div class="feature-extra">
+        <p>
+          Automatizamos tareas repetitivas permitiendo que tu equipo se enfoque
+          en amenazas críticas y estratégicas.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
  <section class="contacto">
   <h2 data-aos="fade-up">Contacto</h2>
 
@@ -83,15 +205,30 @@
     action="https://formspree.io/f/xlgaqlnw" 
     method="POST"
     data-aos="fade-up"
+    class="form-pro"
   >
-    <input type="text" name="nombre" placeholder="Nombre" required>
-    
-    <input type="email" name="email" placeholder="Email" required>
-    
-    <textarea name="mensaje" placeholder="Mensaje" required></textarea>
 
-    <button type="submit">Enviar</button>
+    <div class="input-group">
+      <input type="text" name="nombre" required>
+      <label>Nombre</label>
+    </div>
+
+    <div class="input-group">
+      <input type="email" name="email" required>
+      <label>Email</label>
+    </div>
+
+    <div class="input-group">
+      <textarea name="mensaje" rows="4" required></textarea>
+      <label>Mensaje</label>
+    </div>
+
+    <button type="submit" class="btn-form">
+      Enviar mensaje
+    </button>
+
     <input type="hidden" name="_next" value="https://tusitio.com/gracias.html">
+
   </form>
 </section>
 
@@ -112,6 +249,21 @@
   </script>
 
   <script>
+document.querySelectorAll(".feature-card").forEach(card => {
+  card.addEventListener("click", () => {
+    
+    // cerrar otros (opcional estilo acordeón)
+    document.querySelectorAll(".feature-card").forEach(c => {
+      if (c !== card) c.classList.remove("active");
+    });
+
+    // toggle actual
+    card.classList.toggle("active");
+  });
+});
+</script>
+
+  <script>
   const toggle = document.getElementById("menu-toggle");
   const menu = document.getElementById("menu");
 
@@ -120,6 +272,20 @@
   });
 </script>
 
+<script>
+document.querySelectorAll(".feature-card").forEach(card => {
+
+  card.addEventListener("mousemove", e => {
+    const rect = card.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+
+    card.style.setProperty("--x", x + "px");
+    card.style.setProperty("--y", y + "px");
+  });
+
+});
+</script>
 
 </body>
 </html>
