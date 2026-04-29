@@ -30,197 +30,290 @@
       <span></span>
     </div>
 
-    <!-- MENU -->
-    <ul id="menu">
+  <ul id="menu">
     <li><a href="#inicio" data-es="Inicio" data-en="Home">Inicio</a></li>
     <li><a href="#nosotros" data-es="Nosotros" data-en="About">Nosotros</a></li>
-    <li><a href="#cyberfocus">CyberFocus</a></li>
+    <li><a href="#cyberfocus" data-es="CyberFocus" data-en="CyberFocus">CyberFocus</a></li>
     <li><a href="#contacto" data-es="Contacto" data-en="Contact">Contacto</a></li>
     <li><a href="#" id="lang-toggle">EN</a></li>
   </ul>
-  
-  </nav>
+</nav>
 
-  <!-- HERO -->
-  <header id="inicio" class="hero" data-aos="fade-up">
-    <img src="img/LogoNuevo.png" class="hero-logo">
-    <h1>AURORA</h1>
-    <h2>Protección Digital de Última Generación</h2>
-    <p>Soluciones avanzadas de ciberseguridad para proteger tu empresa.</p>
-    <button class="btn" onclick="document.getElementById('cyberfocus').scrollIntoView()">
-      Conoce CyberFocus
-    </button>
-  </header>
+<!-- HERO -->
+<header id="inicio" class="hero" data-aos="fade-up">
+  <img src="img/LogoNuevo.png" class="hero-logo">
 
-  <!-- NOSOTROS -->
-  <section id="nosotros" class="nosotros">
-    
-    <h2 data-aos="fade-up">Nosotros</h2>
+  <h1>AURORA</h1>
 
-    <div class="nosotros-cards">
+  <h2 
+    data-es="Protección Digital de Última Generación"
+    data-en="Next-Generation Digital Protection">
+    Protección Digital de Última Generación
+  </h2>
 
-      <div class="nos-card" data-aos="fade-up">
+  <p 
+    data-es="Soluciones avanzadas de ciberseguridad para proteger tu empresa."
+    data-en="Advanced cybersecurity solutions to protect your company.">
+    Soluciones avanzadas de ciberseguridad para proteger tu empresa.
+  </p>
+
+  <button 
+    class="btn"
+    data-es="Conoce CyberFocus"
+    data-en="Explore CyberFocus"
+    onclick="document.getElementById('cyberfocus').scrollIntoView()">
+    Conoce CyberFocus
+  </button>
+</header>
+
+<!-- NOSOTROS -->
+<section id="nosotros" class="nosotros">
+
+  <h2 
+    data-aos="fade-up"
+    data-es="Nosotros"
+    data-en="About Us">
+    Nosotros
+  </h2>
+
+  <div class="nosotros-cards">
+
+    <div class="nos-card" data-aos="fade-up">
+      <i data-lucide="shield"></i>
+
+      <h3 
+        data-es="Nuestro Enfoque"
+        data-en="Our Approach">
+        Nuestro Enfoque
+      </h3>
+
+      <p 
+        data-es="Nos enfocamos en la seguridad y eficiencia de procesos, facilitando la transformación digital."
+        data-en="We focus on security and process efficiency, enabling digital transformation.">
+        Nos enfocamos en la seguridad y eficiencia de procesos, facilitando la transformación digital.
+      </p>
+    </div>
+
+    <div class="nos-card" data-aos="fade-up" data-aos-delay="100">
+      <i data-lucide="eye"></i>
+
+      <h3 
+        data-es="Nuestra Visión"
+        data-en="Our Vision">
+        Nuestra Visión
+      </h3>
+
+      <p 
+        data-es="Priorizamos riesgos para tomar decisiones inteligentes basadas en contexto real."
+        data-en="We prioritize risks to make smart decisions based on real context.">
+        Priorizamos riesgos para tomar decisiones inteligentes basadas en contexto real.
+      </p>
+    </div>
+
+    <div class="nos-card" data-aos="fade-up" data-aos-delay="200">
+      <i data-lucide="briefcase"></i>
+
+      <h3 
+        data-es="Nuestro Portafolio"
+        data-en="Our Portfolio">
+        Nuestro Portafolio
+      </h3>
+
+      <p 
+        data-es="Consultoría, diseño de soluciones y servicios gestionados en ciberseguridad."
+        data-en="Consulting, solution design, and managed cybersecurity services.">
+        Consultoría, diseño de soluciones y servicios gestionados en ciberseguridad.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<!-- CYBERFOCUS -->
+<section id="cyberfocus" class="features">
+
+  <h2 data-aos="fade-up">CyberFocus</h2>
+
+  <p class="sub" data-aos="fade-up"
+     data-es="Plataforma de Priorización de Amenazas que transforma el caos de vulnerabilidades en un plan de acción claro."
+     data-en="Threat Prioritization Platform that transforms vulnerability chaos into a clear action plan.">
+     Plataforma de Priorización de Amenazas que transforma el caos de vulnerabilidades en un plan de acción claro.
+  </p>
+
+  <div class="features-grid">
+
+    <!-- CARD 1 -->
+    <div class="feature-card">
+      <div class="feature-header">
+        <i data-lucide="clipboard-check"></i>
+        <h3 
+          data-es="Priorización Inteligente"
+          data-en="Smart Prioritization">
+          Priorización Inteligente
+        </h3>
+      </div>
+
+      <p class="feature-desc"
+         data-es="Listados accionables priorizados por riesgo real."
+         data-en="Actionable lists prioritized by real risk.">
+         Listados accionables priorizados por riesgo real.
+      </p>
+
+      <div class="feature-extra">
+        <p
+          data-es="Analizamos miles de vulnerabilidades automáticamente para identificar las más críticas."
+          data-en="We analyze thousands of vulnerabilities automatically to identify the most critical ones.">
+          Analizamos miles de vulnerabilidades automáticamente
+          para identificar las más críticas.
+        </p>
+      </div>
+    </div>
+
+    <!-- CARD 2 -->
+    <div class="feature-card">
+      <div class="feature-header">
         <i data-lucide="shield"></i>
-        <h3>Nuestro Enfoque</h3>
-        <p>
-          Nos enfocamos en la seguridad y eficiencia de procesos,
-          facilitando la transformación digital.
-        </p>
+        <h3
+          data-es="Riesgo Contextualizado"
+          data-en="Contextual Risk">
+          Riesgo Contextualizado
+        </h3>
       </div>
 
-      <div class="nos-card" data-aos="fade-up" data-aos-delay="100">
-        <i data-lucide="eye"></i>
-        <h3>Nuestra Visión</h3>
-        <p>
-          Priorizamos riesgos para tomar decisiones inteligentes
-          basadas en contexto real.
+      <p class="feature-desc"
+         data-es="Evaluación real considerando tu infraestructura."
+         data-en="Real assessment considering your infrastructure.">
+         Evaluación real considerando tu infraestructura.
+      </p>
+
+      <div class="feature-extra">
+        <p
+          data-es="Integramos controles existentes para reducir falsos positivos."
+          data-en="We integrate existing controls to reduce false positives.">
+          Integramos controles existentes para reducir falsos positivos.
         </p>
       </div>
-
-      <div class="nos-card" data-aos="fade-up" data-aos-delay="200">
-        <i data-lucide="briefcase"></i>
-        <h3>Nuestro Portafolio</h3>
-        <p>
-          Consultoría, diseño de soluciones y servicios gestionados
-          en ciberseguridad.
-        </p>
-      </div>
-
     </div>
-  </section>
 
-  <!-- CYBERFOCUS -->
-  <section id="cyberfocus" class="features">
-    <h2 data-aos="fade-up">CyberFocus</h2>
-    <p class="sub" data-aos="fade-up">
-      Plataforma de Priorización de Amenazas que transforma el caos de vulnerabilidades en un plan de acción claro.
-    </p>
-
-    <div class="features-grid">
-
-      <div class="feature-card">
-        <div class="feature-header">
-          <i data-lucide="clipboard-check"></i>
-          <h3>Priorización Inteligente</h3>
-        </div>
-        <p class="feature-desc">
-          Listados accionables priorizados por riesgo real.
-        </p>
-        <div class="feature-extra">
-          <p>
-            Analizamos miles de vulnerabilidades automáticamente
-            para identificar las más críticas.
-          </p>
-        </div>
+    <!-- CARD 3 -->
+    <div class="feature-card">
+      <div class="feature-header">
+        <i data-lucide="file-text"></i>
+        <h3
+          data-es="Cumplimiento"
+          data-en="Compliance">
+          Cumplimiento
+        </h3>
       </div>
 
-      <div class="feature-card">
-        <div class="feature-header">
-          <i data-lucide="shield"></i>
-          <h3>Riesgo Contextualizado</h3>
-        </div>
-        <p class="feature-desc">
-          Evaluación real considerando tu infraestructura.
-        </p>
-        <div class="feature-extra">
-          <p>
-            Integramos controles existentes para reducir falsos positivos.
-          </p>
-        </div>
-      </div>
+      <p class="feature-desc"
+         data-es="Preparado para auditorías."
+         data-en="Ready for audits.">
+         Preparado para auditorías.
+      </p>
 
-      <div class="feature-card">
-        <div class="feature-header">
-          <i data-lucide="file-text"></i>
-          <h3>Cumplimiento</h3>
-        </div>
-        <p class="feature-desc">
-          Preparado para auditorías.
+      <div class="feature-extra">
+        <p
+          data-es="Generación automática de reportes alineados a estándares."
+          data-en="Automatic report generation aligned with standards.">
+          Generación automática de reportes alineados a estándares.
         </p>
-        <div class="feature-extra">
-          <p>
-            Generación automática de reportes alineados a estándares.
-          </p>
-        </div>
       </div>
-
-      <div class="feature-card">
-        <div class="feature-header">
-          <i data-lucide="trending-up"></i>
-          <h3>Optimización</h3>
-        </div>
-        <p class="feature-desc">
-          Mejora la eficiencia del equipo.
-        </p>
-        <div class="feature-extra">
-          <p>
-            Automatizamos tareas repetitivas para mayor productividad.
-          </p>
-        </div>
-      </div>
-
     </div>
-  </section>
 
-  <!-- CONTACTO -->
-  <section id="contacto" class="contacto">
-    <h2 data-aos="fade-up">Contacto</h2>
-
-    <form 
-      action="https://formspree.io/f/xlgaqlnw" 
-      method="POST"
-      data-aos="fade-up"
-      class="form-pro"
-    >
-
-      <div class="input-group">
-        <input type="text" name="nombre" required>
-        <label>Nombre</label>
+    <!-- CARD 4 -->
+    <div class="feature-card">
+      <div class="feature-header">
+        <i data-lucide="trending-up"></i>
+        <h3
+          data-es="Optimización"
+          data-en="Optimization">
+          Optimización
+        </h3>
       </div>
 
-      <div class="input-group">
-        <input type="email" name="email" required>
-        <label>Email</label>
+      <p class="feature-desc"
+         data-es="Mejora la eficiencia del equipo."
+         data-en="Improve team efficiency.">
+         Mejora la eficiencia del equipo.
+      </p>
+
+      <div class="feature-extra">
+        <p
+          data-es="Automatizamos tareas repetitivas para mayor productividad."
+          data-en="We automate repetitive tasks for greater productivity.">
+          Automatizamos tareas repetitivas para mayor productividad.
+        </p>
       </div>
+    </div>
 
-      <div class="input-group">
-        <textarea name="mensaje" rows="4" required></textarea>
-        <label>Mensaje</label>
-      </div>
+  </div>
+</section>
 
-      <button type="submit" class="btn-form">
-        Enviar mensaje
-      </button>
+<!-- CONTACTO -->
+<section id="contacto" class="contacto">
 
-    </form>
-  </section>
+  <h2 
+    data-aos="fade-up"
+    data-es="Contacto"
+    data-en="Contact">
+    Contacto
+  </h2>
 
+  <form action="https://formspree.io/f/xlgaqlnw" method="POST" class="form-pro">
 
-  <!-- FOOTER -->
-  <footer class="footer">
+    <div class="input-group">
+      <input type="text" required>
+      <label data-es="Nombre" data-en="Name">Nombre</label>
+    </div>
 
+    <div class="input-group">
+      <input type="email" required>
+      <label data-es="Email" data-en="Email">Email</label>
+    </div>
+
+    <div class="input-group">
+      <textarea rows="4" required></textarea>
+      <label data-es="Mensaje" data-en="Message">Mensaje</label>
+    </div>
+
+    <button 
+      type="submit"
+      class="btn-form"
+      data-es="Enviar mensaje"
+      data-en="Send message">
+      Enviar mensaje
+    </button>
+
+  </form>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
   <div class="footer-container">
 
-    <!-- LOGO + TEXTO -->
     <div class="footer-brand">
       <h2>AURORA</h2>
-      <p>Líderes en ciberseguridad</p>
+      <p data-es="Líderes en ciberseguridad" data-en="Leaders in cybersecurity">
+        Líderes en ciberseguridad
+      </p>
     </div>
 
-    <!-- CONTACTO -->
     <div class="footer-contact">
-      <h3>Contacto</h3>
+      <h3 data-es="Contacto" data-en="Contact">Contacto</h3>
       <p>contacto@aurorasys.cl</p>
-      <span>Santiago, Chile</span>
+      <span data-es="Santiago, Chile" data-en="Santiago, Chile">Santiago, Chile</span>
     </div>
 
   </div>
 
-  <!-- BOTTOM -->
   <div class="footer-bottom">
-    <p>© 2026 AURORA. Todos los derechos reservados.</p>
+    <p 
+      data-es="© 2026 AURORA. Todos los derechos reservados."
+      data-en="© 2026 AURORA. All rights reserved.">
+      © 2026 AURORA. Todos los derechos reservados.
+    </p>
   </div>
-
 </footer>
 
   <!-- SCRIPTS -->
@@ -233,6 +326,12 @@
   <script>
     AOS.init();
   </script>
+
+  <script src="https://unpkg.com/lucide@latest"></script>
+<script>lucide.createIcons();</script>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>AOS.init();</script>
 
   <!-- MENU MOBILE -->
   <script>
@@ -284,6 +383,7 @@ document.querySelectorAll('#menu a').forEach(link => {
 });
 </script>
 
+
 <script>
 let currentLang = "es";
 
@@ -296,7 +396,6 @@ document.getElementById("lang-toggle").addEventListener("click", (e) => {
     el.textContent = el.getAttribute("data-" + currentLang);
   });
 
-  // cambiar texto del botón
   document.getElementById("lang-toggle").textContent =
     currentLang === "es" ? "EN" : "ES";
 });
