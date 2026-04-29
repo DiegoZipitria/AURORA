@@ -32,11 +32,13 @@
 
     <!-- MENU -->
     <ul id="menu">
-      <li><a href="#inicio">Inicio</a></li>
-      <li><a href="#nosotros">Nosotros</a></li>
-      <li><a href="#cyberfocus">CyberFocus</a></li>
-      <li><a href="#contacto">Contacto</a></li>
-    </ul>
+    <li><a href="#inicio" data-es="Inicio" data-en="Home">Inicio</a></li>
+    <li><a href="#nosotros" data-es="Nosotros" data-en="About">Nosotros</a></li>
+    <li><a href="#cyberfocus">CyberFocus</a></li>
+    <li><a href="#contacto" data-es="Contacto" data-en="Contact">Contacto</a></li>
+    <li><a href="#" id="lang-toggle">EN</a></li>
+  </ul>
+  
   </nav>
 
   <!-- HERO -->
@@ -279,6 +281,24 @@ document.querySelectorAll('#menu a').forEach(link => {
     // cerrar menú mobile
     document.getElementById("menu").classList.remove("active");
   });
+});
+</script>
+
+<script>
+let currentLang = "es";
+
+document.getElementById("lang-toggle").addEventListener("click", (e) => {
+  e.preventDefault();
+
+  currentLang = currentLang === "es" ? "en" : "es";
+
+  document.querySelectorAll("[data-es]").forEach(el => {
+    el.textContent = el.getAttribute("data-" + currentLang);
+  });
+
+  // cambiar texto del botón
+  document.getElementById("lang-toggle").textContent =
+    currentLang === "es" ? "EN" : "ES";
 });
 </script>
 
