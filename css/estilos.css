@@ -680,3 +680,17 @@ textarea {
   color: #94a3b8;
   margin-bottom: 20px;
 }
+
+.features-grid{
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+@media (max-width: 900px){
+
+  .features-grid{
+    grid-template-columns: 1fr;
+  }
+
+}
