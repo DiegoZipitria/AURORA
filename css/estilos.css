@@ -108,11 +108,7 @@ body > * {
   color: #38bdf8;
 }
 
-/* HERO */
-.hero {
-  text-align: center;
-  padding: 150px 20px 100px;
-}
+
 
 .hero-logo {
   width: 300px; /* probá 180–240 según te guste */
@@ -691,6 +687,169 @@ textarea {
 
   .features-grid{
     grid-template-columns: 1fr;
+  }
+
+}
+/* HERO NUEVO */
+.hero-new{
+  min-height: 100vh;
+
+  display:grid;
+  grid-template-columns: 1.1fr 0.9fr;
+
+  align-items:center;
+  justify-content:center;
+
+  padding:140px 6% 100px;
+
+  gap:20px;
+
+  max-width:1400px;
+  margin:auto;
+}
+
+/* LEFT */
+.hero-logo-box{
+  background: rgba(15,23,42,0.65);
+
+  border:1px solid rgba(255,255,255,0.08);
+
+  border-radius:24px;
+
+  padding:50px;
+
+  backdrop-filter: blur(20px);
+
+  text-align:center;
+}
+
+.hero-logo-box h1{
+  font-size:4rem;
+  margin-top:20px;
+
+  font-family:'Sora', sans-serif;
+}
+
+.hero-logo-box span{
+  color:#94a3b8;
+  font-size:1.1rem;
+}
+
+/* RIGHT */
+.hero-right h2{
+  font-size:3rem;
+  margin-bottom:20px;
+}
+
+.hero-right p{
+  color:#94a3b8;
+  line-height:1.8;
+  font-size:1.1rem;
+}
+
+/* HERO LAYOUT */
+.hero{
+  min-height:100vh;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  gap:40px;
+
+  padding:140px 8% 100px;
+
+  max-width:1400px;
+  margin:auto;
+}
+
+/* IZQUIERDA */
+.hero-left{
+  flex:1;
+  max-width:650px;
+}
+
+.hero-side-card{
+  max-width:420px;
+}
+
+.hero-right{
+  max-width: 500px;
+}
+
+/* DERECHA */
+.hero-right{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+  flex:1;
+}
+
+/* CARD DERECHA */
+.hero-side-card{
+  background: rgba(15,23,42,0.65);
+
+  border:1px solid rgba(255,255,255,0.08);
+
+  border-radius:24px;
+
+  padding:40px;
+
+  backdrop-filter: blur(20px);
+
+  box-shadow:
+    0 20px 60px rgba(0,0,0,0.6),
+    0 0 40px rgba(59,130,246,0.12);
+}
+
+/* TAG */
+.side-tag{
+  display:inline-block;
+
+  margin-bottom:20px;
+
+  padding:8px 14px;
+
+  border-radius:999px;
+
+  background:rgba(6,182,212,0.12);
+
+  color:#67e8f9;
+
+  font-size:0.75rem;
+
+  letter-spacing:1px;
+}
+
+/* TITULO */
+.hero-side-card h3{
+  font-size:2rem;
+
+  margin-bottom:15px;
+
+  font-family:'Sora', sans-serif;
+}
+
+/* TEXTO */
+.hero-side-card p{
+  
+  color:#94a3b8;
+  line-height:1.8;
+  margin:0;
+
+}
+
+
+@media (max-width: 900px){
+
+  .hero-new{
+    grid-template-columns: 1fr;
+    gap:40px;
+    text-align:center;
+  }
+  .hero-right{
+    max-width:100%;
   }
 
 }
