@@ -78,6 +78,35 @@ body > * {
   backdrop-filter: blur(10px);
 }
 
+/* HEADER */
+.feature-header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+/* IZQUIERDA */
+.feature-title{
+  display:flex;
+  align-items:center;
+  gap:14px;
+}
+
+/* FLECHITA */
+.toggle-icon{
+  width:20px;
+  height:20px;
+
+  color:#38bdf8;
+
+  transition:0.3s ease;
+}
+
+/* CUANDO ESTÁ ABIERTA */
+.feature-card.active .toggle-icon{
+  transform:rotate(180deg);
+}
+
 .navbar ul {
   display: flex;
   list-style: none;
