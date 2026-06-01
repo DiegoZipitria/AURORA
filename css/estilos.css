@@ -478,35 +478,230 @@ textarea {
   }
 }
 
-/* NOSOTROS */
-.nosotros {
-  padding: 100px 20px;
-  text-align: center;
+/* =========================
+   SERVICIOS MODERNO
+========================= */
+
+.nosotros{
+  padding:120px 8%;
+  text-align:center;
 }
 
-.nosotros h2 {
-  font-size: 2.2rem;
-  margin-bottom: 50px;
+/* TAG */
+.nosotros-tag{
+  display:inline-block;
+  padding:10px 20px;
+  border-radius:999px;
+
+  background:rgba(59,130,246,0.12);
+  border:1px solid rgba(59,130,246,0.25);
+
+  color:#38bdf8;
+
+  font-size:0.85rem;
+  font-weight:600;
+  letter-spacing:1px;
+
+  margin-bottom:20px;
+}
+
+/* TITULO */
+.nosotros h2{
+  font-size:4rem;
+  font-family:'Sora', sans-serif;
+  margin-bottom:20px;
+}
+
+/* LINEA */
+.nosotros-line{
+  width:90px;
+  height:3px;
+
+  background:linear-gradient(
+    90deg,
+    transparent,
+    #22d3ee,
+    transparent
+  );
+
+  margin:0 auto 30px;
+}
+
+/* SUB */
+.nosotros-sub{
+  color:#94a3b8;
+  font-size:1.2rem;
+  line-height:1.7;
+
+  max-width:700px;
+  margin:0 auto 70px;
 }
 
 /* GRID */
-.nosotros-cards {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  flex-wrap: wrap;
+.nosotros-cards{
+  display:grid;
+  grid-template-columns:repeat(3, 1fr);
+
+  gap:32px;
+
+  max-width:1200px;
+  margin:80px auto 0;
 }
 
 /* CARD */
-.nos-card {
-  background: rgba(15,23,42,0.6);
-  padding: 30px;
-  border-radius: 14px;
-  width: 300px;
-  text-align: left;
+.nos-card{
+  position:relative;
 
-  border: 1px solid rgba(255,255,255,0.05);
-  transition: 0.3s;
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-start;
+
+  min-height:260px;
+
+  padding:38px;
+
+  border-radius:22px;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(10,18,40,0.95),
+      rgba(15,35,65,0.92)
+    );
+
+  border:1px solid rgba(59,130,246,0.22);
+
+  backdrop-filter: blur(20px);
+
+  overflow:hidden;
+
+  transition:0.35s ease;
+}
+
+.btn-center{
+  display:flex;
+  justify-content:center;
+  margin-top:30px;
+}
+
+/* EFECTO */
+.nos-card::before{
+  content:"";
+
+  position:absolute;
+  inset:0;
+
+  background:
+    radial-gradient(
+      circle at top left,
+      rgba(59,130,246,0.15),
+      transparent 45%
+    );
+
+  opacity:0;
+  transition:0.4s;
+}
+
+/* HOVER */
+.nos-card:hover{
+  transform:translateY(-8px);
+
+  border-color:rgba(59,130,246,0.45);
+
+  box-shadow:
+    0 20px 50px rgba(0,0,0,0.55),
+    0 0 35px rgba(59,130,246,0.18);
+}
+
+.nos-card:hover::before{
+  opacity:1;
+}
+
+/* ICONO */
+.nos-icon{
+  width:44px;
+  height:44px;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  border-radius:18px;
+
+  margin-bottom:8px;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(30,64,175,0.35),
+      rgba(37,99,235,0.12)
+    );
+
+  border:1px solid rgba(59,130,246,0.3);
+
+  box-shadow:
+    inset 0 0 20px rgba(59,130,246,0.08),
+    0 0 25px rgba(59,130,246,0.08);
+}
+
+/* ICONO AZUL */
+.nos-icon i{
+  width:34px;
+  height:34px;
+
+  color:#24b1ee;
+}
+
+.nos-icon svg{
+  color:#38bdf8 !important;
+  stroke:#38bdf8 !important;
+}
+
+
+/* TITULO */
+.nos-card h3{
+  font-size:2rem;
+  line-height:1.1;
+
+  margin-bottom:18px;
+
+  font-family:'Sora', sans-serif;
+
+  color:white;
+}
+
+/* TEXTO */
+.nos-card p{
+  color:#94a3b8;
+
+  line-height:1.8;
+
+  font-size:1rem;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1000px){
+
+  .nosotros-cards{
+    grid-template-columns:1fr 1fr;
+  }
+
+}
+
+@media (max-width: 768px){
+
+  .nosotros-cards{
+    grid-template-columns:1fr;
+  }
+
+  .nos-card{
+    min-height:auto;
+  }
+
+  .nosotros h2{
+    font-size:3rem;
+  }
+
 }
 
 /* ICONO */

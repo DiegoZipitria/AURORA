@@ -37,6 +37,7 @@
     <li><a href="#contacto" data-es="Contacto" data-en="Contact">Contacto</a></li>
     <li><a href="#" id="lang-toggle">EN</a></li>
   </ul>
+  
 </nav>
 
 <!-- HERO -->
@@ -61,13 +62,7 @@
       Soluciones avanzadas de ciberseguridad para proteger tu empresa.
     </p>
 
-    <button 
-      class="btn"
-      data-es="Conoce CyberFocus"
-      data-en="Explore CyberFocus"
-      onclick="document.getElementById('cyberfocus').scrollIntoView()">
-      Conoce CyberFocus
-    </button>
+    
 
   </div>
 
@@ -101,72 +96,110 @@
 
 
 <!-- NOSOTROS -->
-<section id="nosotros" class="nosotros">
+<section class="nosotros" id="nosotros">
 
-  <h2 
-    data-aos="fade-up"
-    data-es="Nosotros"
-    data-en="About Us">
-    Nosotros
-  </h2>
+  <span class="nosotros-tag">SERVICIOS</span>
+
+  <h2>Servicios</h2>
+
+  <div class="nosotros-line"></div>
+
+  <p class="nosotros-sub">
+    Soluciones especializadas para proteger y fortalecer
+    tu infraestructura digital.
+  </p>
 
   <div class="nosotros-cards">
 
-    <div class="nos-card" data-aos="fade-up">
-      <i data-lucide="shield"></i>
+    <!-- CARD -->
+    <div class="nos-card">
 
-      <h3 
-        data-es="Nuestro Enfoque"
-        data-en="Our Approach">
-        Nuestro Enfoque
-      </h3>
+      <div class="nos-icon">
+        <i data-lucide="shield"></i>
+      </div>
 
-      <p 
-        data-es="Nos enfocamos en la seguridad y eficiencia de procesos, facilitando la transformación digital."
-        data-en="We focus on security and process efficiency, enabling digital transformation.">
-        Nos enfocamos en la seguridad y eficiencia de procesos, facilitando la transformación digital.
+      <h3>Ofensivos</h3>
+
+      <p>
+        Simulamos ataques reales para identificar y corregir
+        vulnerabilidades antes que los atacantes.
       </p>
+
     </div>
 
-    <div class="nos-card" data-aos="fade-up" data-aos-delay="100">
-      <i data-lucide="eye"></i>
+    <!-- CARD -->
+    <div class="nos-card">
 
-      <h3 
-        data-es="Nuestra Visión"
-        data-en="Our Vision">
-        Nuestra Visión
-      </h3>
+      <div class="nos-icon">
+        <i data-lucide="search"></i>
+      </div>
 
-      <p 
-        data-es="Priorizamos riesgos para tomar decisiones inteligentes basadas en contexto real."
-        data-en="We prioritize risks to make smart decisions based on real context.">
-        Priorizamos riesgos para tomar decisiones inteligentes basadas en contexto real.
+      <h3>Análisis</h3>
+
+      <p>
+        Evaluamos infraestructura, procesos y riesgos para
+        tomar decisiones inteligentes.
       </p>
+
     </div>
 
-    <div class="nos-card" data-aos="fade-up" data-aos-delay="200">
-      <i data-lucide="briefcase"></i>
+    <!-- CARD -->
+    <div class="nos-card">
 
-      <h3 
-        data-es="Nuestro Portafolio"
-        data-en="Our Portfolio">
-        Nuestro Portafolio
-      </h3>
+      <div class="nos-icon">
+        <i data-lucide="monitor"></i>
+      </div>
 
-      <p 
-        data-es="Consultoría, diseño de soluciones y servicios gestionados en ciberseguridad."
-        data-en="Consulting, solution design, and managed cybersecurity services.">
-        Consultoría, diseño de soluciones y servicios gestionados en ciberseguridad.
+      <h3>Pentesting</h3>
+
+      <p>
+        Pruebas de penetración manuales y automatizadas
+        para garantizar la seguridad.
       </p>
+
+    </div>
+
+    <!-- CARD -->
+    <div class="nos-card">
+
+      <div class="nos-icon">
+        <i data-lucide="cpu"></i>
+      </div>
+
+      <h3>Ethical Hacking</h3>
+
+      <p>
+        Simulación ética de ataques avanzados para fortalecer
+        tu infraestructura digital.
+      </p>
+
+    </div>
+
+    <!-- CARD -->
+    <div class="nos-card">
+
+      <div class="nos-icon">
+        <i data-lucide="clipboard-check"></i>
+      </div>
+
+      <h3>Prueba Finishing</h3>
+
+      <p>
+        Validaciones finales y pruebas completas antes
+        de despliegues críticos.
+      </p>
+
     </div>
 
   </div>
+
 </section>
 
-<!-- CYBERFOCUS -->
+
+<!-- Australys  -->
 <section id="cyberfocus" class="features">
 
-  <h2 data-aos="fade-up">CyberFocus</h2>
+  <h2 data-aos="fade-up">Australys</h2>
 
   <p class="sub" data-aos="fade-up"
      data-es="Plataforma de Priorización de Amenazas que transforma el caos de vulnerabilidades en un plan de acción claro."
@@ -335,8 +368,18 @@
     </div>
 </div>
 
-
 </section>
+
+<div class="btn-center">
+  <button 
+    class="btn"
+    data-es="Conoce CyberFocus"
+    data-en="Explore CyberFocus"
+    onclick="document.getElementById('contacto').scrollIntoView()">
+    ¿Quieres una demo?
+  </button>
+</div>
+
 
 <!-- CONTACTO -->
 <section id="contacto" class="contacto">
@@ -347,6 +390,7 @@
     data-en="Contact">
     Contacto
   </h2>
+  <br> <br>
 
   <form class="form-pro">
 
