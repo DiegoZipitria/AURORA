@@ -32,7 +32,8 @@
 
   <ul id="menu">
     <li><a href="#inicio" data-es="Inicio" data-en="Home">Inicio</a></li>
-    <li><a href="#nosotros" data-es="Nosotros" data-en="About">Servicios</a></li>
+    <li><a href="#nosotros" data-es="Nosotros" data-en="About">Nosotros</a></li>
+    <li><a href="#servicios" data-es="Servicios" data-en="Services">Servicios</a></li>
     <li><a href="#cyberfocus" data-es="CyberFocus" data-en="CyberFocus">Australys</a></li>
     <li><a href="#contacto" data-es="Contacto" data-en="Contact">Contacto</a></li>
     <li><a href="#" id="lang-toggle">EN</a></li>
@@ -109,43 +110,67 @@
 </div>
 
 
-<!-- Servicios -->
-<section class="nosotros" id="nosotros">
+<section id="nosotros" class="nosotros">
 
-  <span class="nosotros-tag">SERVICIOS</span>
+  <!-- TAG -->
+   <span class="nosotros-tag">QUIENES SOMOS</span>
+
+  <h2>Nosotros</h2>
+
+ 
+
+  <!-- LINEA -->
+  <div class="nosotros-line"></div>
+
+  <!-- CONTENIDO -->
+  <div class="nosotros-content">
+
+    <p>
+      Junto con saludarles, quiero compartirles algo que vemos
+      con frecuencia en organizaciones como la suya:
+    </p>
+
+    <p>
+      Muchas empresas invierten en herramientas de ciberseguridad,
+      pero no siempre cuentan con claridad sobre cuáles vulnerabilidades
+      representan el mayor riesgo real para su negocio.
+      El resultado es esfuerzo disperso y exposición innecesaria.
+    </p>
+
+    <p>
+      Desde Aurora trabajamos precisamente en eso:
+      ayudar a pasar de la detección a la acción.
+      Lo hacemos a través de dos capacidades complementarias.
+    </p>
+
+  </div>
+
+</section>
+
+
+
+<!-- Servicios -->
+<section class="servicios" id="servicios">
+
+  <span class="servicios-tag">OUR SERVICES</span>
 
   <h2>Servicios</h2>
 
-  <div class="nosotros-line"></div>
+  <div class="servicios-line"></div>
 
-  <p class="nosotros-sub">
+  <p class="servicios-sub">
     Servicios Ofensivos — 
     Ethical Hacking / Red Team Simulamos ataques reales para identificar vulnerabilidades explotables y validar la capacidad de detección y respuesta de su organización.
     No buscamos solo encontrar fallas; buscamos entender cómo un adversario real las aprovecharía.
   </p>
 
-  <div class="nosotros-cards">
+  <div class="servicios-cards">
+
 
     <!-- CARD -->
-    <div class="nos-card">
+    <div class="servicio-card">
 
-      <div class="nos-icon">
-        <i data-lucide="shield"></i>
-      </div>
-
-      <h3>Ofensivos</h3>
-
-      <p>
-        Simulamos ataques reales para identificar y corregir
-        vulnerabilidades antes que los atacantes.
-      </p>
-
-    </div>
-
-    <!-- CARD -->
-    <div class="nos-card">
-
-      <div class="nos-icon">
+      <div class="servicio-icon">
         <i data-lucide="search"></i>
       </div>
 
@@ -159,9 +184,9 @@
     </div>
 
     <!-- CARD -->
-    <div class="nos-card">
+    <div class="servicio-card">
 
-      <div class="nos-icon">
+      <div class="servicio-icon">
         <i data-lucide="monitor"></i>
       </div>
 
@@ -175,9 +200,9 @@
     </div>
 
     <!-- CARD -->
-    <div class="nos-card">
+    <div class="servicio-card">
 
-      <div class="nos-icon">
+      <div class="servicio-icon">
         <i data-lucide="cpu"></i>
       </div>
 
@@ -191,9 +216,9 @@
     </div>
 
     <!-- CARD -->
-    <div class="nos-card">
+    <div class="servicio-card">
 
-      <div class="nos-icon">
+      <div class="servicio-icon">
         <i data-lucide="clipboard-check"></i>
       </div>
 
@@ -214,7 +239,7 @@
 <!-- Australys  -->
 <section id="cyberfocus" class="features">
 
-  <h2 data-aos="fade-up">Australys</h2>
+  <h2 data-aos="fade-up">Australis</h2>
 
   <p class="sub" data-aos="fade-up"
      data-es="Plataforma de Priorización de Amenazas que transforma el caos de vulnerabilidades en un plan de acción claro."
@@ -223,172 +248,103 @@
   </p>
 
   <div class="features-grid">
-
-    <!-- CARD 1 -->
-    <div class="feature-card">
-      <div class="feature-header">
-        <i data-lucide="clipboard-check"></i>
-        <h3 
-          data-es="Priorización Inteligente"
-          data-en="Smart Prioritization">
-          Priorización Inteligente
-        </h3>
-
-        <i class="toggle-icon" data-lucide="chevron-down"></i>
-        
-      </div>
-
-      <p class="feature-desc"
-         data-es="Listados accionables priorizados por riesgo real."
-         data-en="Actionable lists prioritized by real risk.">
-         Listados accionables priorizados por riesgo real.
-      </p>
-
-      <div class="feature-extra">
-        <p
-          data-es="Analizamos miles de vulnerabilidades automáticamente para identificar las más críticas."
-          data-en="We analyze thousands of vulnerabilities automatically to identify the most critical ones.">
-          Analizamos miles de vulnerabilidades automáticamente
-          para identificar las más críticas.
-        </p>
-      </div>
-    </div>
-
-    <!-- CARD 2 -->
-    <div class="feature-card">
-      <div class="feature-header">
-        <i data-lucide="shield"></i>
-        <h3
-          data-es="Riesgo Contextualizado"
-          data-en="Contextual Risk">
-          Riesgo Contextualizado
-        </h3>
-         <i class="toggle-icon" data-lucide="chevron-down"></i>
-      </div>
-
-      <p class="feature-desc"
-         data-es="Evaluación real considerando tu infraestructura."
-         data-en="Real assessment considering your infrastructure.">
-         Evaluación real considerando tu infraestructura.
-      </p>
-
-      <div class="feature-extra">
-        <p
-          data-es="Integramos controles existentes para reducir falsos positivos."
-          data-en="We integrate existing controls to reduce false positives.">
-          Integramos controles existentes para reducir falsos positivos.
-        </p>
-      </div>
-    </div>
-
-    <!-- CARD 3 -->
-    <div class="feature-card">
-      <div class="feature-header">
-        <i data-lucide="file-text"></i>
-        <h3
-          data-es="Cumplimiento"
-          data-en="Compliance">
-          Cumplimiento
-        </h3>
-         <i class="toggle-icon" data-lucide="chevron-down"></i>
-      </div>
-
-      <p class="feature-desc"
-         data-es="Preparado para auditorías."
-         data-en="Ready for audits.">
-         Preparado para auditorías.
-      </p>
-
-      <div class="feature-extra">
-        <p
-          data-es="Generación automática de reportes alineados a estándares."
-          data-en="Automatic report generation aligned with standards.">
-          Generación automática de reportes alineados a estándares.
-        </p>
-      </div>
-    </div>
-
-    <!-- CARD 4 -->
-    <div class="feature-card">
-      <div class="feature-header">
-        <i data-lucide="trending-up"></i>
-        <h3
-          data-es="Optimización"
-          data-en="Optimization">
-          Optimización
-        </h3>
-         <i class="toggle-icon" data-lucide="chevron-down"></i>
-      </div>
-
-      <p class="feature-desc"
-         data-es="Mejora la eficiencia del equipo."
-         data-en="Improve team efficiency.">
-         Mejora la eficiencia del equipo.
-      </p>
-
-      <div class="feature-extra">
-        <p
-          data-es="Automatizamos tareas repetitivas para mayor productividad."
-          data-en="We automate repetitive tasks for greater productivity.">
-          Automatizamos tareas repetitivas para mayor productividad.
-        </p>
-      </div>
-    </div>
-
-
-    <!-- CARD 5 -->
   <div class="feature-card">
-    <div class="feature-header">
-      <i data-lucide="database"></i>
-    <h3
-      data-es="Monitoreo Continuo"
-      data-en="Continuous Monitoring">
-      Monitoreo Continuo
-      </h3>
-       <i class="toggle-icon" data-lucide="chevron-down"></i>
-    </div>
+  <div class="feature-header">
+  <i data-lucide="clipboard-check"></i>
 
-    <p class="feature-desc"
-     data-es="Supervisión constante de amenazas."
-     data-en="Constant threat monitoring.">
-     Supervisión constante de amenazas.
-    </p>
-
-  <div class="feature-extra">
-    <p
-      data-es="Detectamos actividad sospechosa en tiempo real."
-      data-en="We detect suspicious activity in real time.">
-      Detectamos actividad sospechosa en tiempo real.
-    </p>
-    </div>
-    </div>
-
-
-    <!-- CARD 6 -->
-  <div class="feature-card">
-    <div class="feature-header">
-    <i data-lucide="cpu"></i>
-    <h3
-      data-es="Automatización IA"
-      data-en="AI Automation">
-      Automatización IA
+    <h3>
+      Identificación de vectores de ataque reales
     </h3>
-     <i class="toggle-icon" data-lucide="chevron-down"></i>
+
+    <i class="toggle-icon" data-lucide="chevron-down"></i>
   </div>
 
-  <p class="feature-desc"
-     data-es="Respuesta inteligente ante incidentes."
-     data-en="Intelligent incident response.">
-     Respuesta inteligente ante incidentes.
+  <p class="feature-desc">
+    Detectamos vulnerabilidades críticas explotables en entornos reales.
   </p>
 
   <div class="feature-extra">
-    <p
-      data-es="Utilizamos inteligencia artificial para acelerar la detección."
-      data-en="We use artificial intelligence to accelerate detection.">
-      Utilizamos inteligencia artificial para acelerar la detección.
+    <p>
+      Analizamos infraestructura, servicios expuestos y configuraciones
+      inseguras para identificar caminos reales de ataque utilizados por
+      adversarios avanzados.
     </p>
-    </div>
+  </div>
+</div>
+
+<!-- CARD 2 -->
+<div class="feature-card">
+  <div class="feature-header">
+    <i data-lucide="shield"></i>
+
+    <h3>
+      Priorización de riesgos según impacto en su operación
+    </h3>
+
+    <i class="toggle-icon" data-lucide="chevron-down"></i>
+  </div>
+
+  <p class="feature-desc">
+    Clasificación inteligente basada en riesgo operativo real.
+  </p>
+
+  <div class="feature-extra">
+    <p>
+      Correlacionamos vulnerabilidades, activos críticos y exposición
+      pública para priorizar los riesgos que realmente afectan
+      la continuidad de su negocio.
+    </p>
+  </div>
+</div>
+
+<!-- CARD 3 -->
+<div class="feature-card">
+  <div class="feature-header">
+    <i data-lucide="file-text"></i>
+
+    <h3>
+      Plan concreto de mitigación
+    </h3>
+
+    <i class="toggle-icon" data-lucide="chevron-down"></i>
+  </div>
+
+  <p class="feature-desc">
+    Acciones claras y ejecutables para reducir exposición.
+  </p>
+
+  <div class="feature-extra">
+    <p>
+      Generamos planes de remediación prácticos y priorizados,
+      permitiendo corregir vulnerabilidades críticas con foco
+      en impacto, urgencia y viabilidad técnica.
+    </p>
+  </div>
+</div>
+
+<!-- CARD 4 -->
+<div class="feature-card">
+  <div class="feature-header">
+    <i data-lucide="trending-up"></i>
+
+    <h3>
+      Optimización del esfuerzo del equipo de seguridad
+    </h3>
+
+    <i class="toggle-icon" data-lucide="chevron-down"></i>
+  </div>
+
+  <p class="feature-desc">
+    Menos ruido operativo y mayor eficiencia del equipo.
+  </p>
+
+  <div class="feature-extra">
+    <p>
+      Automatizamos análisis y priorización para reducir tareas
+      manuales, permitiendo que los equipos de seguridad enfoquen
+      recursos en amenazas realmente críticas.
+    </p>
+  </div>
 </div>
 
 </section>
