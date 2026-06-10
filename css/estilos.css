@@ -681,8 +681,11 @@ textarea {
 .btn-center{
   display:flex;
   justify-content:center;
-  margin-top:30px;
+
+  margin-top:-80px;
+  margin-bottom:40px;
 }
+
 
 /* EFECTO */
 .servicio-card::before{
