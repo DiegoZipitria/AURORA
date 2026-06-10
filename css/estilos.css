@@ -70,10 +70,14 @@ body > * {
 .navbar {
   display: flex;
   justify-content: space-between;
-  padding: 20px 40px;
+  align-items: center;
+
+  padding: 8px 30px;
+
   position: fixed;
   width: 100%;
   top: 0;
+
   background: rgba(0,0,0,0.4);
   backdrop-filter: blur(10px);
 }
@@ -1246,4 +1250,40 @@ textarea {
     text-align:center;
   }
 
+}
+
+
+.logo-link{
+  display:flex;
+  align-items:center;
+  gap:12px;
+
+  text-decoration:none;
+  color:white;
+}
+
+.navbar-logo{
+  width:42px;
+  height:42px;
+  object-fit:contain;
+
+  transition:0.3s;
+}
+
+.logo-link:hover .navbar-logo{
+  transform:scale(1.08);
+}
+
+.logo-link span{
+  color:white;
+  font-weight:700;
+}
+
+.logo-link:hover span{
+  color:#38bdf8;
+}
+
+.navbar-logo{
+  width:65px;
+  height:65px;
 }
