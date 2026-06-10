@@ -1192,3 +1192,58 @@ textarea {
 
   margin:0 auto 30px;
 }
+
+
+/* =========================
+   AUSTRALIS LAYOUT
+========================= */
+
+.australis-layout{
+  max-width:1200px;
+  margin:60px auto 80px;
+
+  display:grid;
+  grid-template-columns:320px 1fr;
+  gap:60px;
+
+  align-items:center;
+}
+
+.australis-left{
+  text-align:center;
+}
+
+.australis-left h3{
+  font-size:2.5rem;
+  margin-bottom:25px;
+  font-family:'Sora',sans-serif;
+}
+
+.australis-logo{
+  width:100%;
+  max-width:360px;
+}
+
+.australis-right{
+  text-align:left;
+}
+
+.australis-right p{
+  color:#cbd5e1;
+  line-height:1.9;
+  margin-bottom:20px;
+  font-size:1.05rem;
+}
+
+@media (max-width: 900px){
+
+  .australis-layout{
+    grid-template-columns:1fr;
+    text-align:center;
+  }
+
+  .australis-right{
+    text-align:center;
+  }
+
+}
