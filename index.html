@@ -711,6 +711,42 @@
     </div>
 
   </div>
+<h3 class="gallery-title"
+    data-es="Vista de la Plataforma"
+    data-en="Platform Overview">
+  Vista de la Plataforma
+</h3>
+<div class="australis-gallery">
+
+
+  <div class="gallery-item">
+  <img src="img/dashboard1.png"
+       alt="Dashboard"
+      onclick="openLightbox(this.src)">
+</div>
+
+  <div class="gallery-item">
+  <img src="img/dashboard2.png"
+       alt="Dashboard"
+      onclick="openLightbox(this.src)">
+</div>
+
+  <div class="gallery-item">
+  <img src="img/ejemplo.jpg"
+       alt="Dashboard"
+      onclick="openLightbox(this.src)">
+</div>
+
+  <div class="gallery-item">
+    <img src="img/dashboard4.jpg" alt="Vulnerability Management">
+  </div>
+
+  <div class="gallery-item">
+    <img src="img/dashboard5.jpg" alt="Executive Reports">
+  </div>
+
+</div>
+
 
 
   <!-- CARDS -->
@@ -986,6 +1022,16 @@
   </div>
 </footer>
 
+<div id="lightbox" class="lightbox">
+
+  <span onclick="closeLightbox()" class="lightbox-close">
+    &times;
+  </span>
+
+  <img id="lightbox-img">
+
+</div>
+
   <!-- SCRIPTS -->
   <script src="https://unpkg.com/lucide@latest"></script>
   <script>
@@ -1103,6 +1149,24 @@ form.addEventListener("submit", async (e) => {
     alert("Error de conexión 😢");
   }
 });
+</script>
+
+<script>
+
+function openLightbox(src){
+
+  document.getElementById("lightbox").style.display = "flex";
+
+  document.getElementById("lightbox-img").src = src;
+
+}
+
+function closeLightbox(){
+
+  document.getElementById("lightbox").style.display = "none";
+
+}
+
 </script>
 
 </body>

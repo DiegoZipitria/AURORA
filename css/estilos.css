@@ -1215,6 +1215,183 @@ textarea {
   margin:0;
 
 }
+
+
+
+.gallery-title{
+  text-align:center;
+
+  font-size:1.8rem;
+
+  margin-top:60px;
+  margin-bottom:25px;
+
+  color:#fff;
+}
+
+/* =========================
+   AUSTRALIS GALLERY
+========================= */
+
+.australis-gallery{
+
+  display:grid;
+
+  grid-template-columns:
+    2fr 1fr 1fr;
+
+  grid-template-rows:
+    220px 220px;
+
+  gap:20px;
+
+  max-width:1200px;
+
+  margin:70px auto;
+}
+
+/* ITEM */
+
+.gallery-item{
+  position:relative;
+
+  overflow:hidden;
+
+  border-radius:22px;
+
+  border:1px solid rgba(255,255,255,.08);
+
+  background:#0f172a;
+
+  cursor:pointer;
+
+  transition:.4s ease;
+}
+
+/* IMAGEN */
+
+.gallery-item img{
+  width:100%;
+  height:100%;
+
+  object-fit:contain;
+
+  border-radius:12px;
+}
+
+/* CARD GRANDE */
+
+.gallery-item.large{
+  grid-row:span 2;
+}
+
+/* OVERLAY */
+
+.gallery-item::after{
+  content:"";
+
+  position:absolute;
+
+  inset:0;
+
+  background:
+  linear-gradient(
+    to top,
+    rgba(0,0,0,.55),
+    transparent
+  );
+
+  opacity:.8;
+
+  transition:.3s;
+}
+
+/* HOVER */
+
+.gallery-item:hover{
+
+  transform:
+    translateY(-6px)
+    scale(1.02);
+
+  box-shadow:
+    0 20px 50px rgba(0,0,0,.5),
+    0 0 25px rgba(6,182,212,.15);
+}
+
+.gallery-item:hover img{
+  transform:scale(1.08);
+}
+
+.gallery-item:hover::after{
+  opacity:.4;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:900px){
+
+  .australis-gallery{
+
+    grid-template-columns:1fr;
+
+    grid-template-rows:auto;
+  }
+
+  .gallery-item.large{
+    grid-row:auto;
+  }
+
+  .gallery-item{
+    height:240px;
+  }
+}
+
+.lightbox{
+
+  position:fixed;
+
+  inset:0;
+
+  background:rgba(0,0,0,.92);
+
+  display:none;
+
+  justify-content:center;
+  align-items:center;
+
+  z-index:9999;
+}
+
+.lightbox.active{
+  display:flex;
+}
+
+.lightbox img{
+
+  max-width:90%;
+  max-height:90%;
+
+  border-radius:16px;
+
+  box-shadow:
+    0 0 40px rgba(0,0,0,.8);
+}
+
+.lightbox-close{
+
+  position:absolute;
+
+  top:30px;
+  right:40px;
+
+  color:white;
+
+  font-size:50px;
+
+  cursor:pointer;
+}
+
 /* ==========================
    OFFENSIVE SERVICES
 ========================== */
@@ -1229,6 +1406,20 @@ textarea {
     rgba(124, 58, 58, 0.08),
     transparent 45%
   );
+}
+
+.gallery-title{
+  text-align:center;
+
+  font-size:1.8rem;
+
+  margin-top:60px;
+  margin-bottom:25px;
+
+  color:#fff;
+}
+.gallery-item::after{
+  pointer-events:none;
 }
 
 .offensive-sub{
