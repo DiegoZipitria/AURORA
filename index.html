@@ -1205,9 +1205,10 @@ function closeLightbox(){
 }
 
 </script>
+
 <script>
 
-const words = [
+let words = [
   "AURORASYS",
   "PREVENCIÓN",
   "DETECCIÓN",
@@ -1221,7 +1222,33 @@ let deleting = false;
 const typedText =
 document.getElementById("typed-text");
 
+function updateWords(){
+
+  if(currentLang === "en"){
+
+    words = [
+      "AURORASYS",
+      "PREVENTION",
+      "DETECTION",
+      "RESPONSE"
+    ];
+
+  }else{
+
+    words = [
+      "AURORASYS",
+      "PREVENCIÓN",
+      "DETECCIÓN",
+      "RESPUESTA"
+    ];
+
+  }
+
+}
+
 function typeEffect(){
+
+  updateWords();
 
   const currentWord =
   words[wordIndex];
@@ -1233,7 +1260,7 @@ function typeEffect(){
 
     charIndex++;
 
-    if(charIndex === currentWord.length){
+    if(charIndex >= currentWord.length){
 
       deleting = true;
 
@@ -1249,7 +1276,7 @@ function typeEffect(){
 
     charIndex--;
 
-    if(charIndex === 0){
+    if(charIndex <= 0){
 
       deleting = false;
 
@@ -1258,7 +1285,9 @@ function typeEffect(){
       if(wordIndex >= words.length){
         wordIndex = 0;
       }
+
     }
+
   }
 
   setTimeout(
@@ -1268,6 +1297,14 @@ function typeEffect(){
 }
 
 typeEffect();
+
+document.getElementById("lang-toggle").addEventListener("click", () => {
+
+  wordIndex = 0;
+  charIndex = 0;
+  deleting = false;
+
+});
 
 </script>
 </body>
